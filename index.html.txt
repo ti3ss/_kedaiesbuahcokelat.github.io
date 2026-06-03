@@ -1,0 +1,459 @@
+index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kedai Es Buah Cokelat</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- LOADING -->
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<div class="logo-box">
+
+<img
+src="logo.png"
+alt="Logo Kedai Es Buah Cokelat"
+class="logo">
+
+</div>
+
+<h1>Kedai Es Buah Cokelat</h1>
+
+<p class="slogan">
+Camilan Segar, Harga Bersahabat, Rasa Istimewa!
+</p>
+
+<a href="#menu" class="hero-btn">
+Lihat Menu
+</a>
+
+</div>
+
+</header>
+
+<!-- PROMO -->
+
+<section class="promo-slider">
+
+<div class="promo-track">
+
+<div class="promo-item">
+🎉 Beli 5 Es Kul-Kul Gratis 1
+</div>
+
+<div class="promo-item">
+🍫 Cokelat Melimpah
+</div>
+
+<div class="promo-item">
+🌶️ Basreng Pedas Favorit
+</div>
+
+<div class="promo-item">
+🥤 Milo Dinosaurus Laris
+</div>
+
+</div>
+
+</section>
+
+<!-- INFO -->
+
+<section class="info">
+
+<div class="info-card">
+
+<h3>📍 Lokasi</h3>
+
+<p>
+Jl. Terusan Jendral Sudirman No.306
+(Samping Universitas UNJANI)
+Kota Cimahi
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>🕘 Jam Buka</h3>
+
+<p>
+09.00 - 21.00 WIB
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>📱 WhatsApp</h3>
+
+<p>
+0813-1344-0344
+</p>
+
+</div>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Cari menu favorit..."
+>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu">
+
+<h2 class="section-title">
+Menu Favorit
+</h2>
+
+<div class="menu-grid">
+
+<!-- PISANG -->
+
+<div class="card">
+
+<div class="badge best">
+🔥 BEST SELLER
+</div>
+
+<img
+src="pisang.jpg"
+class="menu-img">
+
+<div class="content">
+
+<h3>🍌 Es Kul-Kul Pisang</h3>
+
+<div class="price">
+Rp 1.500
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Es Kul-Kul Pisang',1500)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- MELON -->
+
+<div class="card">
+
+<div class="badge">
+⭐ FAVORIT
+</div>
+
+<img
+src="melon.jpg"
+class="menu-img">
+
+<div class="content">
+
+<h3>🍈 Es Kul-Kul Melon</h3>
+
+<div class="price">
+Rp 1.500
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Es Kul-Kul Melon',1500)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- STRAWBERRY -->
+
+<div class="card">
+
+<div class="badge">
+💖 ANAK-ANAK SUKA
+</div>
+
+<img
+src="strawberry.jpg"
+class="menu-img">
+
+<div class="content">
+
+<h3>🍓 Es Kul-Kul Strawberry</h3>
+
+<div class="price">
+Rp 2.000
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Es Kul-Kul Strawberry',2000)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- MILO -->
+
+<div class="card">
+
+<div class="badge">
+🥤 PALING LARIS
+</div>
+
+<div class="placeholder">
+🥤
+</div>
+
+<div class="content">
+
+<h3>Es Milo Dinosaurus</h3>
+
+<div class="price">
+Rp 4.500
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Es Milo Dinosaurus',4500)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- INDOCAFE -->
+
+<div class="card">
+
+<div class="placeholder">
+☕
+</div>
+
+<div class="content">
+
+<h3>Indocafe Mix</h3>
+
+<div class="price">
+Rp 4.000
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Indocafe Mix',4000)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- MAX TEA -->
+
+<div class="card">
+
+<div class="placeholder">
+🍋
+</div>
+
+<div class="content">
+
+<h3>Max Tea Lemon</h3>
+
+<div class="price">
+Rp 4.000
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Max Tea Lemon',4000)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+<!-- BASRENG -->
+
+<div class="card">
+
+<div class="badge pedas">
+🌶️ PEDAS FAVORIT
+</div>
+
+<img
+src="basreng.jpg"
+class="menu-img">
+
+<div class="content">
+
+<h3>Karedok Baso Goreng</h3>
+
+<div class="price">
+Rp 10.000
+</div>
+
+<div class="stock ready">
+Ready Stock
+</div>
+
+<button onclick="addToCart('Karedok Baso Goreng',10000)">
++ Keranjang
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- KERANJANG -->
+
+<div class="cart-box">
+
+<div class="cart-header">
+
+🛒 Keranjang Belanja
+
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-total">
+
+Total:
+<span id="totalPrice">
+Rp 0
+</span>
+
+</div>
+
+<button
+class="checkout-btn"
+onclick="checkoutWhatsApp()">
+
+Checkout WhatsApp
+
+</button>
+
+</div>
+
+<!-- TESTIMONI -->
+
+<section class="testimonial">
+
+<h2>Apa Kata Pelanggan?</h2>
+
+<div class="testi-grid">
+
+<div class="testi-card">
+⭐⭐⭐⭐⭐
+<br>
+Murah dan enak!
+</div>
+
+<div class="testi-card">
+⭐⭐⭐⭐⭐
+<br>
+Basreng pedasnya mantap.
+</div>
+
+<div class="testi-card">
+⭐⭐⭐⭐⭐
+<br>
+Cokelatnya tebal banget.
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Kedai Es Buah Cokelat</h3>
+
+<p>
+Jl. Terusan Jendral Sudirman No.306
+(Samping Universitas UNJANI)
+Kota Cimahi
+</p>
+
+<a
+href="https://maps.app.goo.gl/AB8XNWjKjYU3VrPy5"
+target="_blank">
+
+📍 Lihat Lokasi
+
+</a>
+
+</footer>
+
+<!-- WA FLOAT -->
+
+<a
+href="https://wa.me/6281313440344"
+class="wa-float"
+target="_blank">
+
+💬
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
