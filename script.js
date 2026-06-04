@@ -14,6 +14,8 @@ JSON.parse(
 localStorage.getItem("cart")
 ) || [];
 
+console.log("CART OK", cart);
+
 /* =========================
    FORMAT RUPIAH
 ========================= */
