@@ -1,4 +1,34 @@
 style.css
+.hero{
+background:linear-gradient(135deg,#6b3e1f,#8b4513,#c47a3a);
+padding:60px 20px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+margin-bottom:30px;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"🍫";
+position:absolute;
+font-size:120px;
+opacity:.08;
+right:20px;
+top:10px;
+}
+
+.hero h1{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:20px;
+}
 /* =========================
    RESET
 ========================= */
