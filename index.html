@@ -156,9 +156,8 @@ alt="Es Kul-Kul Pisang">
 Rp 1.500
 </div>
 
-<div class="stock ready">
-Ready Stock
-</div>
+if(stok<=0)
+return '<span class="badge sold">🔴 SOLD OUT</span>';
 
 <button onclick="addToCart('Es Kul-Kul Pisang',1500)">
 + Keranjang
