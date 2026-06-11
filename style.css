@@ -124,23 +124,28 @@ transform:rotate(360deg);
 ========================= */
 
 .hero{
-height:90vh;
+
 background:
 linear-gradient(
 rgba(0,0,0,.45),
 rgba(0,0,0,.45)
 ),
-url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd');
+url('https://i.ibb.co.com/LXQmQ3kY/Untitled-1.png');
+
 background-size:cover;
 background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
+background-repeat:no-repeat;
+
+padding:80px 20px;
+border-radius:25px;
 text-align:center;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+margin-bottom:30px;
 position:relative;
 overflow:hidden;
-}
 
+}
 .hero-content{
 z-index:2;
 color:white;
