@@ -1,4 +1,26 @@
 style.css
+.category-nav{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.category-nav a{
+background:#8b4513;
+color:white;
+text-decoration:none;
+padding:12px 20px;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.category-nav a:hover{
+background:#6d3410;
+transform:translateY(-3px);
+}
 .hero{
 background:linear-gradient(135deg,#6b3e1f,#8b4513,#c47a3a);
 padding:60px 20px;
