@@ -450,3 +450,92 @@ toastStyle
 ========================= */
 
 renderCart();
+
+// =========================
+// STOK STRAWBERRY
+// =========================
+
+let stokStrawberry =
+parseInt(
+localStorage.getItem("stokStrawberry")
+) || 4;
+
+updateStokStrawberry();
+
+function addToCartStock(
+name,
+price,
+produk
+){
+
+if(produk === "strawberry"){
+
+if(stokStrawberry <= 0){
+
+alert("Stok Habis!");
+
+return;
+
+}
+
+stokStrawberry--;
+
+localStorage.setItem(
+"stokStrawberry",
+stokStrawberry
+);
+
+updateStokStrawberry();
+
+}
+
+addToCart(name,price);
+
+}
+
+function updateStokStrawberry(){
+
+const stok =
+document.getElementById(
+"stok-strawberry"
+);
+
+const btn =
+document.getElementById(
+"btn-strawberry"
+);
+
+if(!stok || !btn) return;
+
+if(stokStrawberry <= 0){
+
+stok.innerHTML =
+"Stok Habis";
+
+stok.className =
+"stock empty";
+
+btn.disabled = true;
+
+btn.innerHTML =
+"Stok Habis";
+
+}else if(stokStrawberry <= 5){
+
+stok.innerHTML =
+"Stok: " + stokStrawberry;
+
+stok.className =
+"stock limited";
+
+}else{
+
+stok.innerHTML =
+"Stok: " + stokStrawberry;
+
+stok.className =
+"stock ready";
+
+}
+
+}
