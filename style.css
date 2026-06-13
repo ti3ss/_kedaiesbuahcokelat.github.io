@@ -398,6 +398,12 @@ transition:.3s;
 opacity:.9;
 }
 
+button:disabled{
+background:#999;
+cursor:not-allowed;
+opacity:.7;
+}
+
 /* =========================
    CART
 ========================= */
