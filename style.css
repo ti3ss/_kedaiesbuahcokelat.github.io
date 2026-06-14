@@ -585,3 +585,34 @@ transition:.3s;
 transform:translateY(-2px);
 background:#6d3410;
 }
+.search-section{
+padding:20px;
+text-align:center;
+}
+
+#searchInput{
+
+width:100%;
+max-width:500px;
+
+padding:15px 20px;
+
+border:2px solid #8b4513;
+
+border-radius:30px;
+
+font-size:16px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+#searchInput:focus{
+
+box-shadow:
+0 0 15px
+rgba(139,69,19,.25);
+
+}
