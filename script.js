@@ -539,3 +539,25 @@ stok.className =
 }
 
 }
+
+function updateCartCounter(){
+
+const counter =
+document.getElementById(
+"cartCounter"
+);
+
+if(!counter) return;
+
+let totalQty = 0;
+
+cart.forEach(item => {
+
+totalQty += item.qty;
+
+});
+
+counter.innerHTML =
+"🛒 " + totalQty;
+
+}
