@@ -283,15 +283,19 @@ cards.forEach(card=>{
 const text =
 card.innerText.toLowerCase();
 
-if(text.includes(keyword)){
+if(
+text.includes(keyword)
+){
 
 card.style.display =
-"block";
+"";
 
 }else{
 
 card.style.display =
 "none";
+
+}
 
 }
 
