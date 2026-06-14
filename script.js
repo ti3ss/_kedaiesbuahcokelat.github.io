@@ -132,7 +132,7 @@ JSON.stringify(cart)
 ========================= */
 
 function renderCart(){
-
+updateCartCounter();
 const cartItems =
 document.getElementById(
 "cartItems"
@@ -450,6 +450,7 @@ toastStyle
 ========================= */
 
 renderCart();
+updateCartCounter();
 
 // =========================
 // STOK STRAWBERRY
