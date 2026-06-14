@@ -1,4 +1,26 @@
 style.css
+.cart-counter{
+position:fixed;
+bottom:90px;
+right:20px;
+
+background:#ff5722;
+color:white;
+
+padding:12px 18px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+font-size:18px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+}
 .category-nav{
 display:flex;
 justify-content:center;
