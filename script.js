@@ -538,3 +538,42 @@ card.style.display = "none";
 });
 
 }
+/* =========================
+   SEARCH MENU REAL TIME
+========================= */
+
+const searchInput =
+document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener(
+"keyup",
+function(){
+
+const keyword =
+this.value.toLowerCase();
+
+const cards =
+document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+const text =
+card.innerText.toLowerCase();
+
+if(text.includes(keyword)){
+
+card.style.display = "";
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+});
+
+}
