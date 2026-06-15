@@ -255,47 +255,6 @@ window.open(
 
 }
 
-/* =========================
-   SEARCH MENU
-========================= */
-
-const searchInput =
-document.getElementById("searchInput");
-
-if(searchInput){
-
-searchInput.addEventListener(
-"keyup",
-function(){
-
-const keyword =
-this.value.toLowerCase();
-
-const cards =
-document.querySelectorAll(".card");
-
-cards.forEach(card => {
-
-const text =
-card.innerText.toLowerCase();
-
-if(text.includes(keyword)){
-
-card.style.display = "";
-
-}else{
-
-card.style.display = "none";
-
-}
-
-});
-
-}
-
-);
-
-}
 
 /* =========================
    TOAST NOTIFIKASI
@@ -568,7 +527,7 @@ category === "all" ||
 card.classList.contains(category)
 ){
 
-card.style.display = "block";
+card.style.display = "";
 
 }else{
 
@@ -588,9 +547,7 @@ document.getElementById("searchInput");
 
 if(searchInput){
 
-searchInput.addEventListener(
-"keyup",
-function(){
+searchInput.addEventListener("keyup", function(){
 
 const keyword =
 this.value.toLowerCase();
@@ -615,8 +572,6 @@ card.style.display = "none";
 
 });
 
-}
-
-);
+});
 
 }
