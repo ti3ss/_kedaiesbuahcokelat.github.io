@@ -580,13 +580,11 @@ card.style.display = "none";
 
 }
 /* =========================
-   SEARCH MENU REAL TIME
+   SEARCH MENU
 ========================= */
 
 const searchInput =
-document.getElementById(
-"searchInput"
-);
+document.getElementById("searchInput");
 
 if(searchInput){
 
@@ -598,23 +596,27 @@ const keyword =
 this.value.toLowerCase();
 
 const cards =
-document.querySelectorAll(
-".card"
-);
+document.querySelectorAll(".card");
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
 const text =
 card.innerText.toLowerCase();
 
-if(
-text.includes(keyword)
-){
+if(text.includes(keyword)){
 
-card.style.display =
-"block";
+card.style.display = "";
 
 }else{
 
-card.style.display =
-"none";
+card.style.display = "none";
+
+}
+
+});
+
+}
+
+);
+
+}
