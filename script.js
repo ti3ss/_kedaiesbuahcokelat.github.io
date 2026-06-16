@@ -23,9 +23,6 @@ document.body.classList.contains(
 });
 
 }
-
-});
-
 if(
 localStorage.getItem("darkMode")
 === "true"
