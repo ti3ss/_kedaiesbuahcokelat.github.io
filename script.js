@@ -298,11 +298,9 @@ window.open(
 
 cart = [];
 
-}
 
 saveCart();
 
-}
 
 renderCart();
    
