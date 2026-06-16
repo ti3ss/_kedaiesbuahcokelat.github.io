@@ -270,18 +270,24 @@ pesan +=
 `%0ATotal Belanja: ${formatRupiah(total)}%0A`;
 
 pesan +=
-"%0AMohon diproses ya 🙏";
+"%0A%0A📍 Nama Pemesan :";
+pesan +=
+"%0A📍 Alamat :";
+pesan +=
+"%0A📍 Catatan :";
 
+pesan +=
+"%0A%0ATerima kasih 🙏";
 window.open(
-
 "https://wa.me/6281313440344?text=" + pesan,
-
 "_blank"
-
 );
 
-}
+cart = [];
 
+saveCart();
+
+renderCart();
 
 /* =========================
    TOAST NOTIFIKASI
