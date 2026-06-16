@@ -5,6 +5,8 @@
 const darkBtn =
 document.getElementById("darkModeBtn");
 
+if(darkBtn){
+
 darkBtn.addEventListener("click",()=>{
 
 document.body.classList.toggle(
@@ -17,6 +19,10 @@ document.body.classList.contains(
 "dark-mode"
 )
 );
+
+});
+
+}
 
 });
 
@@ -84,6 +90,8 @@ qty:1
 saveCart();
 
 renderCart();
+   
+}
 
 showToast(
 name + " ditambahkan"
@@ -288,6 +296,8 @@ cart = [];
 saveCart();
 
 renderCart();
+   
+}
 
 /* =========================
    TOAST NOTIFIKASI
