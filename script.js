@@ -87,9 +87,8 @@ qty:1
 }
 
 saveCart();
-}
+
 renderCart();
-}
 
 showToast(
 name + " ditambahkan"
@@ -115,8 +114,6 @@ cart.splice(index,1);
 
 saveCart();
    
-}
-
 renderCart();
 
 }
@@ -130,8 +127,6 @@ function increaseItem(index){
 cart[index].qty++;
 
 saveCart();
-   
-}
 
 renderCart();
 
@@ -147,8 +142,6 @@ cart.splice(index,1);
 
 saveCart();
    
-}
-
 renderCart();
 
 }
