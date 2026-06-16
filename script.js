@@ -1,7 +1,8 @@
-
 /* =========================
    LOADER
 ========================= */
+
+/*
 const darkBtn =
 document.getElementById("darkModeBtn");
 
@@ -23,6 +24,7 @@ document.body.classList.contains(
 });
 
 }
+
 if(
 localStorage.getItem("darkMode")
 === "true"
@@ -33,7 +35,7 @@ document.body.classList.add(
 );
 
 }
-
+*/
 
 /* =========================
    DATA KERANJANG
