@@ -604,3 +604,15 @@ card.style.display = "none";
 });
 
 }
+
+function backTop(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
