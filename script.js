@@ -88,9 +88,8 @@ qty:1
 }
 
 saveCart();
-
+}
 renderCart();
-   
 }
 
 showToast(
@@ -116,6 +115,8 @@ cart.splice(index,1);
 }
 
 saveCart();
+   
+}
 
 renderCart();
 
@@ -130,6 +131,8 @@ function increaseItem(index){
 cart[index].qty++;
 
 saveCart();
+   
+}
 
 renderCart();
 
@@ -144,6 +147,8 @@ function removeItem(index){
 cart.splice(index,1);
 
 saveCart();
+   
+}
 
 renderCart();
 
@@ -293,7 +298,11 @@ window.open(
 
 cart = [];
 
+}
+
 saveCart();
+
+}
 
 renderCart();
    
