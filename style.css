@@ -459,10 +459,19 @@ position:fixed;
 right:20px;
 bottom:20px;
 width:330px;
-background:white;
+
+background:rgba(255,255,255,0.85);
+
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+
 border-radius:25px;
 padding:20px;
+
+border:1px solid rgba(255,255,255,.3);
+
 box-shadow:0 10px 35px rgba(0,0,0,.2);
+
 z-index:999;
 max-height:70vh;
 overflow:auto;
@@ -649,6 +658,12 @@ transition:.3s;
 }
 
 #searchInput:focus{
+
+.dark-mode .cart-box{
+background:rgba(30,30,30,0.85);
+color:white;
+border:1px solid rgba(255,255,255,.1);
+}
 
 box-shadow:
 0 0 15px
