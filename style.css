@@ -282,24 +282,6 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
-.hero{
-
-animation:
-zoomHero 10s infinite alternate;
-
-}
-
-@keyframes zoomHero{
-
-from{
-background-size:100%;
-}
-
-to{
-background-size:115%;
-}
-
-}
 
 /* =========================
    PROMO SLIDER
