@@ -559,6 +559,21 @@ box-shadow:0 5px 20px rgba(0,0,0,.3);
 z-index:999;
 }
 
+.top-btn{
+position:fixed;
+right:20px;
+bottom:170px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#8b4513;
+color:white;
+font-size:22px;
+cursor:pointer;
+z-index:999;
+}
+
 /* =========================
    MOBILE
 ========================= */
