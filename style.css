@@ -935,3 +935,24 @@ background:#222;
 color:white;
 border:2px solid #ffb347;
 }
+
+html, body{
+margin:0 !important;
+padding:0 !important;
+width:100%;
+overflow-x:hidden;
+}
+
+.hero{
+margin-top:0 !important;
+margin-bottom:0 !important;
+border-radius:0 !important;
+}
+
+.container,
+.wrapper,
+main{
+margin:0 !important;
+padding:0 !important;
+max-width:100% !important;
+}
