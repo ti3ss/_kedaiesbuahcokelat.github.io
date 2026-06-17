@@ -740,6 +740,9 @@ transition:.3s;
 }
 
 #searchInput:focus{
+box-shadow:
+0 0 15px rgba(139,69,19,.25);
+}
 
 .dark-mode .cart-box{
 background:rgba(30,30,30,0.85);
