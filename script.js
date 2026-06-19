@@ -66,9 +66,7 @@ number.toLocaleString("id-ID");
 function addToCart(name, price){
 
 const item =
-cart.find(
-item => item.name === name
-);
+cart.find(item => item.name === name);
 
 if(item){
 
@@ -77,14 +75,25 @@ item.qty++;
 }else{
 
 cart.push({
-
 name,
 price,
 qty:1
-
 });
 
 }
+
+let sold =
+JSON.parse(
+localStorage.getItem("sold")
+) || {};
+
+sold[name] =
+(sold[name] || 0) + 1;
+
+localStorage.setItem(
+"sold",
+JSON.stringify(sold)
+);
 
 saveCart();
 
@@ -94,8 +103,9 @@ showToast(
 name + " ditambahkan"
 );
 
-}
+updateBestSeller();
 
+}
 /* =========================
    KURANGI ITEM
 ========================= */
@@ -631,3 +641,54 @@ behavior:"smooth"
 });
 
 }
+function updateBestSeller(){
+
+const sold =
+JSON.parse(
+localStorage.getItem("sold")
+) || {};
+
+let bestProduct = "";
+let highest = 0;
+
+for(let item in sold){
+
+if(sold[item] > highest){
+
+highest = sold[item];
+bestProduct = item;
+
+}
+
+}
+
+document
+.querySelectorAll(".card")
+.forEach(card=>{
+
+const old =
+card.querySelector(".bestseller");
+
+if(old) old.remove();
+
+const title =
+card.querySelector("h3");
+
+if(
+title &&
+title.innerText === bestProduct
+){
+
+card.innerHTML += `
+<div class="badge bestseller">
+🔥 TERLARIS
+</div>
+`;
+
+}
+
+});
+
+}
+
+updateBestSeller();
