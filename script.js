@@ -468,7 +468,7 @@ localStorage.getItem("stokStrawberry")
 
 updateStokStrawberry();
 
-function addToCartStock(
+function updateBestSeller()
 name,
 price,
 produk
@@ -703,3 +703,4 @@ alert(
 },1500);
 
 }
+window.onload = function()
