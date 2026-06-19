@@ -468,37 +468,6 @@ localStorage.getItem("stokStrawberry")
 
 updateStokStrawberry();
 
-function updateBestSeller()
-name,
-price,
-produk
-){
-
-if(produk === "strawberry"){
-
-if(stokStrawberry <= 0){
-
-alert("Stok Habis!");
-
-return;
-
-}
-
-stokStrawberry--;
-
-localStorage.setItem(
-"stokStrawberry",
-stokStrawberry
-);
-
-updateStokStrawberry();
-
-}
-
-addToCart(name,price);
-
-}
-
 function updateStokStrawberry(){
 
 const stok =
