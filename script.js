@@ -692,3 +692,14 @@ card.innerHTML += `
 }
 
 updateBestSeller();
+window.onload = function(){
+
+setTimeout(()=>{
+
+alert(
+"🎉 Selamat Datang di Kedai Es Buah Cokelat!\n\nHari ini tersedia Es Kul-Kul, Basreng, Milo Dinosaurus dan banyak menu favorit lainnya 🍫"
+);
+
+},1500);
+
+}
