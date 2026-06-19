@@ -702,5 +702,4 @@ alert(
 
 },1500);
 
-}
-window.onload = function()
+};
