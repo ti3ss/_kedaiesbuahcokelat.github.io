@@ -192,8 +192,8 @@ color:white;
 }
 
 .logo{
-width:230px;
-height:230px;
+width:190px;
+height:190px;
 object-fit:cover;
 border-radius:50%;
 border:5px solid white;
@@ -256,7 +256,7 @@ filter:brightness(1);
 
 }
 .hero h1{
-font-size:70px;
+font-size:60px;
 margin-top:20px;
 font-weight:800;
 }
@@ -622,6 +622,39 @@ font-weight:700;
    WA FLOAT
 ========================= */
 
+.wa-float{
+position:fixed;
+left:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:999;
+}
+
+.top-btn{
+position:fixed;
+right:20px;
+bottom:170px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#8b4513;
+color:white;
+font-size:22px;
+cursor:pointer;
+z-index:999;
+}
+
 .overlay{
 position:absolute;
 top:0;
@@ -637,13 +670,8 @@ height:100%;
 
 @media(max-width:768px){
 
-.logo{
-width:180px;
-height:180px;
-}
-
 .hero h1{
-font-size:42px;
+font-size:38px;
 }
 
 .slogan{
@@ -961,228 +989,4 @@ header.hero{
 margin:0 !important;
 border-radius:0 !important;
 min-height:100vh !important;
-}
-.map-btn{
-
-display:inline-block;
-
-margin-top:15px;
-
-padding:12px 20px;
-
-background:#4285F4;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:12px;
-
-font-weight:700;
-
-transition:.3s;
-
-}
-
-.map-btn:hover{
-
-transform:translateY(-2px);
-
-opacity:.9;
-
-}
-.maps-section{
-
-padding:30px;
-
-max-width:1200px;
-
-margin:auto;
-
-}
-.bestseller{
-
-background:#ff4444;
-
-color:white;
-
-position:absolute;
-
-top:10px;
-
-right:10px;
-
-padding:8px 12px;
-
-border-radius:20px;
-
-font-size:12px;
-
-font-weight:700;
-
-animation:pulseBest 1.5s infinite;
-
-}
-
-@keyframes pulseBest{
-
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.1);
-}
-
-100%{
-transform:scale(1);
-}
-
-}
-@media(max-width:768px){
-
-.top-btn{
-bottom:280px;
-right:15px;
-}
-
-}
-/* =========================
-   FLOAT BUTTON MODERN
-========================= */
-
-.wa-float{
-position:fixed;
-right:20px;
-bottom:20px;
-
-width:65px;
-height:65px;
-
-background:#25D366;
-color:white;
-
-border-radius:50%;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-size:30px;
-
-text-decoration:none;
-
-box-shadow:
-0 5px 20px rgba(0,0,0,.25);
-
-z-index:9999;
-
-transition:.3s;
-}
-
-.wa-float:hover{
-transform:scale(1.08);
-}
-
-.top-btn{
-
-position:fixed;
-
-right:20px;
-bottom:100px;
-
-width:65px;
-height:65px;
-
-border:none;
-
-border-radius:50%;
-
-background:#8b4513;
-
-color:white;
-
-font-size:28px;
-
-cursor:pointer;
-
-box-shadow:
-0 5px 20px rgba(0,0,0,.25);
-
-z-index:9999;
-
-transition:.3s;
-}
-
-.top-btn:hover{
-transform:scale(1.08);
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.wa-float{
-right:15px;
-bottom:15px;
-width:60px;
-height:60px;
-}
-
-.top-btn{
-right:15px;
-bottom:90px;
-width:60px;
-height:60px;
-}
-
-}
-/* PAKSA POSISI BARU */
-
-.wa-float{
-position:fixed !important;
-
-right:20px !important;
-bottom:20px !important;
-
-left:auto !important;
-
-width:65px !important;
-height:65px !important;
-
-background:#25D366 !important;
-
-border-radius:50% !important;
-
-display:flex !important;
-justify-content:center !important;
-align-items:center !important;
-
-font-size:32px !important;
-
-z-index:99999 !important;
-
-box-shadow:0 5px 20px rgba(0,0,0,.25);
-}
-
-.top-btn{
-position:fixed !important;
-
-right:20px !important;
-bottom:95px !important;
-
-width:65px !important;
-height:65px !important;
-
-background:#8b4513 !important;
-
-border-radius:50% !important;
-
-color:white !important;
-
-font-size:28px !important;
-
-z-index:99999 !important;
-
-box-shadow:0 5px 20px rgba(0,0,0,.25);
 }
