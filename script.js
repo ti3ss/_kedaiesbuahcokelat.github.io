@@ -46,6 +46,19 @@ JSON.parse(
 localStorage.getItem("cart")
 ) || [];
 
+let stokProduk =
+JSON.parse(
+localStorage.getItem("stokProduk")
+) || {
+
+"Es Kul-Kul Strawberry":10,
+"Es Kul-Kul Pisang":20,
+"Es Kul-Kul Melon":15,
+"Basreng":30,
+"Milo Dinosaurus":25,
+"Teh Manis":50
+
+};
 console.log("CART OK", cart);
 
 /* =========================
@@ -65,6 +78,55 @@ number.toLocaleString("id-ID");
 
 function addToCart(name, price){
 
+if(
+stokProduk[name] !== undefined &&
+stokProduk[name] <= 0
+){
+
+alert("Stok Habis!");
+return;
+
+}
+
+if(stokProduk[name] !== undefined){
+
+stokProduk[name]--;
+
+localStorage.setItem(
+"stokProduk",
+JSON.stringify(stokProduk)
+);
+
+}
+
+const item =
+cart.find(
+item => item.name === name
+);
+
+if(item){
+
+item.qty++;
+
+}else{
+
+cart.push({
+name,
+price,
+qty:1
+});
+
+}
+
+saveCart();
+renderCart();
+updateAllStock();
+
+showToast(
+name + " ditambahkan"
+);
+
+}
 const item =
 cart.find(item => item.name === name);
 
@@ -672,3 +734,35 @@ alert(
 },1500);
 
 };
+function updateAllStock(){
+
+document
+.querySelectorAll("[data-produk]")
+.forEach(el=>{
+
+const nama =
+el.dataset.produk;
+
+if(
+stokProduk[nama] !== undefined
+){
+
+el.innerHTML =
+"Stok : " +
+stokProduk[nama];
+
+if(stokProduk[nama] <= 0){
+
+el.innerHTML =
+"Stok Habis";
+
+el.className =
+"stock empty";
+
+}
+
+}
+
+});
+
+}
