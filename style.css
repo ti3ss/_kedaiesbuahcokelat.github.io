@@ -645,7 +645,12 @@ bottom:15px;
 
 .top-btn{
 right:15px;
-bottom:85px;
+bottom:120px;
+}
+.top-btn:hover,
+.wa-float:hover{
+transform:scale(1.1);
+transition:.3s;
 }
 
 .overlay{
