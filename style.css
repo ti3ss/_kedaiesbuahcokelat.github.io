@@ -635,7 +635,9 @@ font-weight:700;
 /* =========================
    WA FLOAT
 ========================= */
-
+.wa-float{
+font-size:34px;
+}
 .wa-float{
 right:15px;
 bottom:15px;
