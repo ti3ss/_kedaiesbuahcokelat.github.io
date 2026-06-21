@@ -237,6 +237,7 @@ JSON.stringify(cart)
 
 function renderCart(){
 updateCartCounter();
+updateAllStock();
 const cartItems =
 document.getElementById(
 "cartItems"
