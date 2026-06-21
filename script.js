@@ -287,7 +287,7 @@ pesan +=
 pesan +=
 "%0A%0A📍 Nama Pemesan :";
 pesan +=
-"%0A📍 Alamat :";
+"%0A📍 Alamat/Kostan :";
 pesan +=
 "%0A📍 Catatan :";
 
