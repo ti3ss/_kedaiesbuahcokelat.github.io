@@ -127,47 +127,7 @@ name + " ditambahkan"
 );
 
 }
-const item =
-cart.find(item => item.name === name);
 
-if(item){
-
-item.qty++;
-
-}else{
-
-cart.push({
-name,
-price,
-qty:1
-});
-
-}
-
-let sold =
-JSON.parse(
-localStorage.getItem("sold")
-) || {};
-
-sold[name] =
-(sold[name] || 0) + 1;
-
-localStorage.setItem(
-"sold",
-JSON.stringify(sold)
-);
-
-saveCart();
-
-renderCart();
-
-showToast(
-name + " ditambahkan"
-);
-
-updateBestSeller();
-
-}
 /* =========================
    KURANGI ITEM
 ========================= */
