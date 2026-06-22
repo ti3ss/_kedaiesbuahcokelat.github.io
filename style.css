@@ -47,10 +47,16 @@ transform:translateY(-3px);
 
 background:
 linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.45)
+rgba(0,0,0,.20),
+rgba(0,0,0,.20)
 ),
-url('https://i.ibb.co.com/wNtm7kMM/Bananas-news.jpg');
+url('https://i.ibb.co.com/8Lc0gz2Q/Banner-Kedai-Es-Buah-Cokelat1.png');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
 
 background-size:cover;
 background-position:center;
