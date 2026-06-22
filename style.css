@@ -641,18 +641,81 @@ z-index:999;
 }
 
 .top-btn{
+
 position:fixed;
-right:9px;
-bottom:95px;
-width:55px;
-height:55px;
+
+right:20px;
+bottom:85px;
+
+width:65px;
+height:65px;
+
 border:none;
-border-radius:35%;
-background:#8b4513;
+border-radius:50%;
+
+background:linear-gradient(
+145deg,
+#a0522d,
+#6b3200
+);
+
 color:white;
-font-size:22px;
+
+font-size:30px;
+
 cursor:pointer;
-z-index:999;
+
+z-index:9999;
+
+box-shadow:
+0 6px 20px rgba(0,0,0,.25),
+0 0 15px rgba(160,82,45,.35);
+
+transition:.3s ease;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+/* Hover */
+
+.top-btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.08);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.3),
+0 0 20px rgba(160,82,45,.5);
+
+}
+
+/* Efek berkedip */
+
+.top-btn{
+
+animation:
+floatUp 2s ease-in-out infinite;
+
+}
+
+@keyframes floatUp{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
+100%{
+transform:translateY(0);
+}
+
 }
 
 .overlay{
