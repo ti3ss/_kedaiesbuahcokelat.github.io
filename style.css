@@ -47,10 +47,10 @@ transform:translateY(-3px);
 
 background:
 linear-gradient(
-rgba(0,0,0,.20),
-rgba(0,0,0,.20)
+rgba(0,0,0,.15),
+rgba(0,0,0,.15)
 ),
-url('https://i.ibb.co.com/m5gh0bDG/Banner-Kedai-Es-Buah-Cokelat1.jpg');
+url('images/banner-kedai.jpg');
 
 background-size:cover;
 background-position:center;
