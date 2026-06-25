@@ -44,20 +44,8 @@ background:#6d3410;
 transform:translateY(-3px);
 }
 .hero{
-
-background:
-linear-gradient(
-rgba(0,0,0,.15),
-rgba(0,0,0,.15)
-),
-url("https://ti3ss.github.io/_kedaiesbuahcokelat.github.io/Banner_KedaiEsBuahCokelat1.jpg");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-
+background:red !important;
 }
-
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
