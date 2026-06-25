@@ -44,7 +44,16 @@ background:#6d3410;
 transform:translateY(-3px);
 }
 .hero{
-background:red !important;
+background:
+linear-gradient(
+rgba(0,0,0,.15),
+rgba(0,0,0,.15)
+),
+url('./images/banner-kedai.jpg') !important;
+
+background-size:cover !important;
+background-position:center !important;
+background-repeat:no-repeat !important;
 }
 background-size:cover;
 background-position:center;
