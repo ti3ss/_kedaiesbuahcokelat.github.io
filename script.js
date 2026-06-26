@@ -47,14 +47,19 @@ localStorage.getItem("cart")
 ) || [];
 
 let stokProduk =
-JSON.parse(
-localStorage.getItem("stokProduk")
-) || {
+JSON.parse(localStorage.getItem("stokProduk")) || {
 
 "Es Kul-Kul Strawberry":10,
 "Es Kul-Kul Pisang":20,
 "Es Kul-Kul Melon":15,
-"Basreng":30,
+
+"Karedok Baso Goreng":30,
+"GORENG TAHU CRISPY":20,
+"INDOMIE NYEMEK":20,
+"NASI GORENG RUMAHAN":20,
+"NASI TELUR CRISPY":20,
+"Seblak":20,
+
 "Milo Dinosaurus":25,
 "Teh Manis":50
 
