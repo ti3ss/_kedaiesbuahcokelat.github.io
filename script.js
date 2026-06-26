@@ -650,37 +650,36 @@ alert(
 
 };
 function updateAllStock(){
-   
-console.log("UPDATE STOK");
 
 document.querySelectorAll("[data-produk]").forEach(el=>{
 
-const nama = el.dataset.produk;
+const nama = el.dataset.produk.trim();
 
-if(stokProduk[nama]===undefined) return;
+const tombol = el.parentElement.querySelector("button");
 
-const tombol =
-el.parentElement.querySelector("button");
+if(stokProduk[nama] === undefined){
 
-if(stokProduk[nama]<=0){
+console.log("Tidak ditemukan:", nama);
 
-el.innerHTML="Stok Habis";
+return;
 
-el.className="stock empty";
+}
+
+el.innerHTML = "Stok : " + stokProduk[nama];
+
+if(stokProduk[nama] <= 0){
+
+el.innerHTML = "Stok Habis";
+el.className = "stock empty";
 
 if(tombol){
-
-tombol.disabled=true;
-
-tombol.innerHTML="Stok Habis";
-
+tombol.disabled = true;
+tombol.innerHTML = "Stok Habis";
 }
 
 }else{
 
-el.innerHTML="Stok : "+stokProduk[nama];
-
-el.className="stock ready";
+el.className = "stock ready";
 
 }
 
