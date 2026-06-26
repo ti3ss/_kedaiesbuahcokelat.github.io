@@ -83,6 +83,9 @@ number.toLocaleString("id-ID");
 
 function addToCart(name, price){
 
+console.log("Produk :", name);
+console.log("Stok Sebelum :", stokProduk[name]);
+
 if(
 stokProduk[name] !== undefined &&
 stokProduk[name] <= 0
@@ -646,6 +649,8 @@ alert(
 
 };
 function updateAllStock(){
+   
+console.log("UPDATE STOK");
 
 document.querySelectorAll("[data-produk]").forEach(el=>{
 
