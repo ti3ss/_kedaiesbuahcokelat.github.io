@@ -1,3 +1,4 @@
+console.log("SCRIPT VERSI BARU BERHASIL DIMUAT");
 /* =========================
    LOADER
 ========================= */
