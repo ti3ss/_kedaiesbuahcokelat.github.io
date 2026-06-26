@@ -488,55 +488,6 @@ updateCartCounter();
 
 updateAllStock();
 
-// =========================
-// STOK STRAWBERRY
-// =========================
-
-const stok =
-document.getElementById(
-"stok-strawberry"
-);
-
-const btn =
-document.getElementById(
-"btn-strawberry"
-);
-
-if(!stok || !btn) return;
-
-if(stokStrawberry <= 0){
-
-stok.innerHTML =
-"Stok Habis";
-
-stok.className =
-"stock empty";
-
-btn.disabled = true;
-
-btn.innerHTML =
-"Stok Habis";
-
-}else if(stokStrawberry <= 5){
-
-stok.innerHTML =
-"Stok: " + stokStrawberry;
-
-stok.className =
-"stock limited";
-
-}else{
-
-stok.innerHTML =
-"Stok: " + stokStrawberry;
-
-stok.className =
-"stock ready";
-
-}
-
-}
-
 function updateCartCounter(){
 
 const counter =
