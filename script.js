@@ -483,20 +483,14 @@ toastStyle
 ========================= */
 
 renderCart();
+
 updateCartCounter();
+
+updateAllStock();
 
 // =========================
 // STOK STRAWBERRY
 // =========================
-
-let stokStrawberry =
-parseInt(
-localStorage.getItem("stokStrawberry")
-) || 4;
-
-updateStokStrawberry();
-
-function updateStokStrawberry(){
 
 const stok =
 document.getElementById(
@@ -702,30 +696,34 @@ alert(
 };
 function updateAllStock(){
 
-document
-.querySelectorAll("[data-produk]")
-.forEach(el=>{
+document.querySelectorAll("[data-produk]").forEach(el=>{
 
-const nama =
-el.dataset.produk;
+const nama = el.dataset.produk;
 
-if(
-stokProduk[nama] !== undefined
-){
+if(stokProduk[nama]===undefined) return;
 
-el.innerHTML =
-"Stok : " +
-stokProduk[nama];
+const tombol =
+el.parentElement.querySelector("button");
 
-if(stokProduk[nama] <= 0){
+if(stokProduk[nama]<=0){
 
-el.innerHTML =
-"Stok Habis";
+el.innerHTML="Stok Habis";
 
-el.className =
-"stock empty";
+el.className="stock empty";
+
+if(tombol){
+
+tombol.disabled=true;
+
+tombol.innerHTML="Stok Habis";
 
 }
+
+}else{
+
+el.innerHTML="Stok : "+stokProduk[nama];
+
+el.className="stock ready";
 
 }
 
