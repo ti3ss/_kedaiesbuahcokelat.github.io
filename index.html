@@ -422,10 +422,10 @@ alt="Es Kul-Kul Pisang">
 
 <div class="price">
 Rp 2.000
-</div>
-
-<div id="Es Kul-Kul Pisang" class="stock limited">
-Stok: 20
+<div
+class="stock limited"
+data-produk="Es Kul-Kul Pisang">
+Stok : 20
 </div>
 
 <button onclick="addToCart('Es Kul-Kul Pisang',2000)">
@@ -456,8 +456,10 @@ alt="Es Kul-Kul Melon">
 Rp 2.000
 </div>
 
-<div id="Es Kul-Kul Melon" class="stock limited">
-Stok: 20
+<div
+class="stock limited"
+data-produk="Es Kul-Kul Melon">
+Stok : 15
 </div>
 
 <button onclick="addToCart('Es Kul-Kul Melon',2000)">
@@ -488,8 +490,10 @@ alt="Es Kul-Kul Strawberry">
 Rp 2.000
 </div>
 
-<div id="Es Kul-Kul Strawberry" class="stock limited">
-Stok: 20
+<div
+class="stock limited"
+data-produk="Es Kul-Kul Strawberry">
+Stok : 10
 </div>
    
 <button onclick="addToCart('Es Kul-Kul Strawberry',2000)">
@@ -1374,18 +1378,11 @@ width="35">
   
 <script src="script.js?v=999"></script>
 
-</body>
-<button
-id="darkModeBtn"
-style="
-position:fixed;
-top:20px;
-right:20px;
-z-index:99999;
-padding:10px;
-border:none;
-border-radius:50%;
-cursor:pointer;">
+<button id="darkModeBtn">
 🌙
 </button>
+
+<script src="script.js?v=999"></script>
+
+</body>
 </html>
