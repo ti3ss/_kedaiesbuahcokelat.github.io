@@ -59,7 +59,7 @@ JSON.parse(localStorage.getItem("stokProduk")) || {
 "INDOMIE NYEMEK":20,
 "NASI GORENG RUMAHAN":20,
 "NASI TELUR CRISPY":20,
-"Seblak":20,
+"Seblak Pedas":20,
 
 "Milo Dinosaurus":25,
 "Teh Manis":50
