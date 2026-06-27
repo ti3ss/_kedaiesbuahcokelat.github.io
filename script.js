@@ -62,7 +62,31 @@ JSON.parse(localStorage.getItem("stokProduk")) || {
 "Seblak Pedas":20,
 
 "Milo Dinosaurus":25,
-"Teh Manis":50
+"Teh Manis":50,
+
+"Es Milo 3in1":20,
+"Indocafe Mix":20,
+"Max Tea Lemon":20,
+"Aneka Rasa Good Day":20,
+"Good-Day-Frezee":20,
+"Aneka Rasa Pop Ice":20,
+"Drink Beng beng":20,
+"Aneka Rasa Nutrisari":20,
+"Max Tea Tarik":20,
+"NESCAFE CLASSIC":20,
+"GOOD DAY CAPPUCCINO":20,
+"CHOCOLATOS SMOOTH MATCHA":20,
+"CHOCOLATOS FULL CHOCOLATEY":20,
+"DRINK KAPAL API":20,
+"TEH SISRI":20,
+"TOP COFFEE GULA AREN":20,
+"ENERGEN VANILA":20,
+"ES TEH GULA BATU":20,
+"ES TEH HIJAU CELUP":20,
+"POP ICE AVOCADO":20,
+"POP ICE CHOCOLATE":20,
+"POP ICE KACANG HIJAU":20,
+"POP ICE YOGURT STRAWBERRY":20
 
 };
 console.log("CART OK", cart);
