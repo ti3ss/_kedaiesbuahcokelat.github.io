@@ -68,7 +68,7 @@ JSON.parse(localStorage.getItem("stokProduk")) || {
 "Indocafe Mix":20,
 "Max Tea Lemon":20,
 "Aneka Rasa Good Day":20,
-"Good-Day-Frezee":20,
+"Good-Day-Freeze":20,
 "Aneka Rasa Pop Ice":20,
 "Drink Beng beng":20,
 "Aneka Rasa Nutrisari":20,
